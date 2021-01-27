@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grp3_Programmeringsmetodik", "Grp3_Programmeringsmetodik\Grp3_Programmeringsmetodik.csproj", "{A5352BD4-29E2-4518-918C-655C9C673309}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E5824150-CE46-416B-AE8B-85383DF1C017} = {E5824150-CE46-416B-AE8B-85383DF1C017}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerSide", "ServerSide\ServerSide.csproj", "{E5824150-CE46-416B-AE8B-85383DF1C017}"
 EndProject

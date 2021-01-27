@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj": {}
+    "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj": {
+    "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
+        "projectUniqueName": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
         "projectName": "ServerSide",
-        "projectPath": "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
-        "packagesPath": "C:\\Users\\arm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\obj\\",
+        "projectPath": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
+        "packagesPath": "C:\\Users\\RaZee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\arm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RaZee\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -43,6 +43,28 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
