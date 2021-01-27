@@ -5799,23 +5799,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RaZee\\.nuget\\packages\\": {},
+    "C:\\Users\\arm\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
+      "projectUniqueName": "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
       "projectName": "ServerSide",
-      "projectPath": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
-      "packagesPath": "C:\\Users\\RaZee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\obj\\",
+      "projectPath": "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
+      "packagesPath": "C:\\Users\\arm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\arm\\source\\repos\\Grp3-Programmeringsmetodik\\ServerSide\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\RaZee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\arm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5878,7 +5878,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
