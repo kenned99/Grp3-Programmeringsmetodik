@@ -5799,23 +5799,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Seppi\\.nuget\\packages\\": {},
+    "C:\\Users\\RaZee\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Seppi\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
+      "projectUniqueName": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
       "projectName": "ServerSide",
-      "projectPath": "C:\\Users\\Seppi\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
-      "packagesPath": "C:\\Users\\Seppi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Seppi\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\obj\\",
+      "projectPath": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\ServerSide.csproj",
+      "packagesPath": "C:\\Users\\RaZee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RaZee\\Source\\Repos\\Grp3-Programmeringsmetodik\\ServerSide\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Seppi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RaZee\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
