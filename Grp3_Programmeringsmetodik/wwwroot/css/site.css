@@ -59,6 +59,20 @@ html {
   min-height: 100%;
 }
 
+.rotate {
+    ​​ animation: rotation 1s infinite linear;
+}
+@keyframes rotation {
+    ​​ from
+{
+    ​​ transform: rotate(-10deg);
+}
+to {
+    ​​ transform: rotate(10deg);
+}​​
+}
+
+​​
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
