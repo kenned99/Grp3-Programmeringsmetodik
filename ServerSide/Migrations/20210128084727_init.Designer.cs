@@ -10,8 +10,8 @@ using ServerSide;
 namespace ServerSide.Migrations
 {
     [DbContext(typeof(CockTailsDBContext))]
-    [Migration("20210128082641_SingleCategory")]
-    partial class SingleCategory
+    [Migration("20210128084727_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
