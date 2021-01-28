@@ -9,7 +9,7 @@ namespace ServerSide
     public interface IDataController
     {
         public int Commit();
-        public string CreateDrink(Drink drink);
+        public string CreateDrink(Drink drink, string categoryID);
         public Drink UpdateDrink(Drink drink);
         public Drink ReadDrink(string id);
         public string RemoveDrink(Drink drink);
