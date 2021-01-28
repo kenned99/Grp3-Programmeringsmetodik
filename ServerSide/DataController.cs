@@ -22,8 +22,10 @@ namespace ServerSide
             return db.SaveChanges();
         }
 
-        public string CreateDrink(Drink drink)
+        public string CreateDrink(Drink drink, string categoryID)
         {
+            //var category = db.Categories.Find(categoryID);
+            drink.Category = db.Categories.Find(categoryID);
             db.Add(drink);
             return ("Monke");
         }
