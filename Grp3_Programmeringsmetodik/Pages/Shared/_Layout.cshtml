@@ -9,12 +9,16 @@
 </head>
 <body>
     <header class="header">
-        <img id="logo" src="~/logoCockTail.png" />
-        <div style="margin-right: 2vw;">
-            <button class="userButtons">New User</button>
-            <button class="userButtons">Login</button>
-            <button class="userButtons">Log out</button>
-        </div>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="~/logoCockTail.png" />
+            </a>
+            <div class="my-2 my-lg-0">
+                <button class="btn btn-orange">New User</button>
+                <button class="btn btn-orange">Login</button>
+                <button class="btn btn-orange" style="display: none;">Log out</button>
+            </div>
+        </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
