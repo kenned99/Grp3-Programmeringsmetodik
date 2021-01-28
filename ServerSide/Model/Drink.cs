@@ -18,8 +18,8 @@ namespace ServerSide.Model
         public string Description { get; set; }
         public List<Ingredient> Ingredients { get; set; }
         public string Instructions { get; set; }
-        public IFormFile Image { get; set; }
-        public User Author { get; set; }
+        public Byte[] Image { get; set; }
+        public User Author { get; set; } = null!;
 
     }
 }
