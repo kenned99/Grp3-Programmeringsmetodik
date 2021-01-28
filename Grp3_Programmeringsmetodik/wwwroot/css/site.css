@@ -71,6 +71,7 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+/*basic layout header & buttons*/
 .userButtons {
     margin-top: 5vh;
     background-color: #ff8600;
@@ -93,3 +94,30 @@ header {
 .header{
     height: 10vw;
 }
+
+/*design for drink card page*/
+.drink_card_main {
+    width: 70vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.58);
+    margin-left: -5vw;
+    border-radius: 0.3vw;
+    color: white;
+    padding: 3vw;
+}
+.drink_card_img {
+    width: 20vw;
+    height: auto;
+    margin-right: 3vw;
+    float: left;
+}
+.info {
+    width: 35vw;
+    height: auto;    
+}
+.howToMake{
+    margin-top: 3vw;
+}
+
+
+/*next*/
