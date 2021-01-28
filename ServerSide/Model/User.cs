@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,6 +16,6 @@ namespace ServerSide.Model
         public string Name { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public Byte[] ProfileImage { get; set; }
+        public IFormFile ProfileImage { get; set; }
     }
 }
