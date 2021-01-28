@@ -23,7 +23,17 @@ namespace Grp3_Programmeringsmetodik.Pages
         {
         }
         public void OnPost()
-        {     
+        {
+            List<Ingredient> ingredients = new List<Ingredient>();
+            for (int i = 0; i < Request.Form["amount[]"].Count(); i++)
+            {
+                ingredients.Add(new Ingredient() { 
+                    Amount = Convert.ToDouble(Request.Form["amount[]"][i]), 
+                    Unit = Request.Form["unit[]"][i],
+                    Title = Request.Form["title[]"][i]
+                });
+            }
+            drink.Ingredients = ingredients;
             idc.CreateDrink(drink, Request.Form["categoryID"]);
             idc.Commit();
         }
