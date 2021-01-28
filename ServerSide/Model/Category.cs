@@ -12,6 +12,6 @@ namespace ServerSide.Model
         }
         public string Id { get; set; }
         public string Title { get; set; }
-        public Byte[] Image { get; set; }
+        public Byte[] Image { get; set; } = null!;
     }
 }

@@ -3,18 +3,23 @@
 @{
     ViewData["Title"] = "Create Drink";
 }
+
 <style>
-body {
-    color: white;
-}
+    body {
+        color: white;
+    }
 </style>
 
 <div class="row justify-content-center">
     <div class="col-lg-6 drink_card_main">
-        <form>
+        <form method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input asp-for="@Model.drink.Name" type="text" class="form-control" name="name" />
+            </div>
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
-                <select class="form-select form-control" name="category">
+                <select class="form-select form-control" name="categoryID">
                     <option value="1" selected>Liquor</option>
                     <option value="2">Beer</option>
                     <option value="3">Shots</option>
@@ -23,26 +28,54 @@ body {
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <textarea class="form-control" name="description" placeholder="Type in description..." style="height: 100px"></textarea>
+                <textarea asp-for="@Model.drink.Description" class="form-control" name="description" placeholder="Type in description..." style="height: 100px"></textarea>
             </div>
             <div class="mb-3">
                 <label for="ingredients" class="form-label">Ingredients</label>
-                <select class="form-select form-control" name="ingredients" multiple>
-                    <option value="1" selected>Coffee liqueur</option>
-                    <option value="2">1 1/2 oz Vodka</option>
-                    <option value="3">Light cream</option>
-                    <option value="4">Cubes ice</option>
-                </select>
+                <table id="ingredientTable" class="table table-light">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Unit</th>
+                            <th>Title</th>
+                            <th><button id="addIngredient" type="button" class="btn btn-success">+</button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" name="amount[]"/></td>
+                            <td><input type="text" class="form-control" name="unit[]"/></td>
+                            <td><input type="text" class="form-control" name="title[]"/></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="mb-3">
                 <label for="instructions" class="form-label">Instructions</label>
-                <textarea class="form-control" name="instructions" placeholder="Type in instructions..." style="height: 100px"></textarea>
+                <textarea asp-for="@Model.drink.Instructions" class="form-control" name="instructions" placeholder="Type in instructions..." style="height: 100px"></textarea>
             </div>
             <div class="mb-3">
                 <label for="image" class="form-label">Image</label>
-                <input type="file" class="form-control" name="image"/>
+                <input asp-for="@Model.drink.Image" type="file" class="form-control" name="image" />
             </div>
             <button type="submit" class="btn btn-orange">Create</button>
         </form>
     </div>
 </div>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#addIngredient').on('click', function () {
+                $('#ingredientTable').prepend(
+                    '<tr>' +
+                    '<td><input type="text" class="form-control" name="amount[]" /></td>' +
+                    '<td><input type="text" class="form-control" name="unit[]" /></td>' +
+                    '<td><input type="text" class="form-control" name="title[]" /></td>' +
+                    '</tr>'
+                );
+            });
+        });
+    </script>
+}

@@ -16,5 +16,6 @@ namespace ServerSide
         public DbSet<User> Users { get; set; }
         public DbSet<Drink> Drinks { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
