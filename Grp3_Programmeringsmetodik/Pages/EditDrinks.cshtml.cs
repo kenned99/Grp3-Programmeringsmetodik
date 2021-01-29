@@ -1,3 +1,4 @@
+using ServerSide;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,14 @@ namespace Grp3_Programmeringsmetodik.Pages
 {
     public class EditDrinksModel : PageModel
     {
-        public void OnGet()
+        private readonly IDataController idc;
+        public EditDrinksModel(IDataController idc) 
         {
+            this.idc = idc;
+        }
+        public void OnGet(string drinkId)
+        {
+            idc.ReadDrink(drinkId);
         }
     }
 }
